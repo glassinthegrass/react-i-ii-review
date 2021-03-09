@@ -3,23 +3,43 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is React?
+-react is a  js library created and maintained by facebook
+-used to manage the virtual DOM and create versatile and performant UI
+-using component based architechture and unidirectional dataflow
 
 2.  What is create-react-app?
+create-react-app is a very basic react application provided by facebook so to provide a basic app for developers to learn in
+-a package that sets up a new react project
+-also sets up a developer server that will auto-refresh on changes
+-npx is a package runner for npm
 
 3.  What is Component Based Architecture?
+component based architechture involves building seperate components on js documents filed under the components folder imported to the main app page and rendering there. components are highly versitile and reusable
+-encapsulating individual pieces of code to bring together into a larger project/app
 
 4.  What is JSX?
+-jsx is the syntax extension of javascript facebook developed for react
+-looks like html
+-transpiled into regular JS function calls
+-combines css html and js
+-not unique to react
 
 5.  What is the virtual DOM?
+-lightweight copy of the actual DOM
+-virtual dom is a representation of a ui that is live synced with a library like react to display your app
+-when changes to component made the virtual dom informs the dom what actual changes need to be made
 
 6.  What is unidirectional (one-way) data flow?
+-data can only flow from parent to child and not the other direction
+-parent to child using props
+-ensures we have a single source of truth
 
 ### Understand
 
 Discuss these questions in pairs if you have a 4-person group
 
 7.  Summarize what happens when you run `create-react-app my-app`
-
+it downloads a basic and predetermined version of react app to allow for quick developement rather than building from scratch each time
 8.  Explain what this code does:
 
 ```jsx

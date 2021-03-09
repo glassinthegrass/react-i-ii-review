@@ -3,18 +3,27 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is state?
+-state is a built in object in react used to store property values that belongs to the component. when the state object changes the component rerenders
+-state is where you store property values for components
+-state is data that is managed by the component (this.state.name)
 
 2.  Where do you set initial state?
+-in your parent component
+-in the components constructor under where we call super()
 
 3.  What method do you use to update state?
+-setState() the set state method
+-when we use the setState method, we need to send in an object that specifies our targeted properties that need changed along with their values
 
 ### Understand
 
 Discuss this question in pairs if you have a 4-person group
 
 4.  Explain what's happening in this component.
+lists the instructor at the top lists how many questions have been answered total
 
 ```jsx
+
 import React, { Component } from "react";
 
 class LeadMentor extends Component {
@@ -40,7 +49,9 @@ class LeadMentor extends Component {
   }
 }
 ```
-
+the code is creating a component called leadMentor
+lead mentor is displaying questionsAnswered in its return
+user is able to increase the amount of questions answered held in state by invoking the handleClick, the components rerenders showing the updated number
 ### Apply
 
 Try these on your own, but work together if you start to get stuck.

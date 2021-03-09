@@ -3,14 +3,21 @@
 Answer these on your own, then compare answers as a group
 
 1.  What are props?
+When React sees an element representing a user-defined component, it passes JSX attributes and children to this component as a single object. We call this object “props”.
+-props is an object avail to the component 
+-props are data being passed into a component 
 
 2.  How do you pass props from a parent to a child?
-
+they are accessible throught the parent. but rather than reference this you reference props
+-we pass props into the child using the childs component tag 
+-set up props on child components tag by saying <whateverPropertyName>=<hardcodedDataOrReferenceToExistingDataUsingCurlyBraces/>
 3.  How do you access props from a class based child component?
-
+from within JSX- {this.props.propName} and outside JSX
 4.  How do you access props from a functional component?
-
+-props.propName
 5.  How do you bind a function to a parent component so that it can be passed to a child?
+1) from within the constructor outside the state and before the methods <function name> = this.<function name>.bind.this
+use lexical binding by not using the bind method and using the => functions
 
 ### Understand
 
@@ -42,6 +49,7 @@ class Queue extends Component {
     this.setState({ questions });
   }
   render() {
+    return (
     <div className="queue-container">
       <h1>The Queue</h1>
       <h3>{this.state.questions.length}</h3>
@@ -49,10 +57,12 @@ class Queue extends Component {
       <Student askQuestion={this.askQuestion} />
       <Mentor answerQuestion={this.answerQuestion} />
     </div>;
+  
+  )
   }
 }
 ```
-
+-WE are passing down seperate 
 ### Apply
 
 Try these on your own, but work together if you start to get stuck.
